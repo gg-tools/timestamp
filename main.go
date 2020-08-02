@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gg-tools/timestamp/cmd/commands"
+	"github.com/gg-tools/timestamp/commands"
 	"github.com/urfave/cli"
 	"log"
 	"os"

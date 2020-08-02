@@ -26,7 +26,7 @@ $ timestamp "1988-08-13 18:06:06"
 Get timestamp of now plus 1 year 3 days 4 hours 5 minutes 6 seconds and minus 2 months:
 
 ```shell
-$ timestamp 1y+ 2m- 3d 4h 5i 6s
+$ timestamp +1y -2m 3d 4h 5i 6s
 1622895151 (2021-06-05 20:12:31)
 ```
 

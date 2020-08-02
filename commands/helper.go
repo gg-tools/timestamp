@@ -37,7 +37,7 @@ func parseTime(arg string) (t time.Time, err error) {
 }
 
 func str2time(s ...string) (t time.Time, err error) {
-	exp := regexp.MustCompile(`^(\d+)([ymdhis])(\+|-)?$`)
+	exp := regexp.MustCompile(`^(\+|-)?(\d+)([ymdhis])$`)
 
 	t = time.Now()
 	for i, ss := range s {
@@ -46,8 +46,8 @@ func str2time(s ...string) (t time.Time, err error) {
 			err = fmt.Errorf("bad arg at %d: %s", i, ss)
 			return
 		}
-		num, _ := strconv.Atoi(parts[3] + parts[1])
-		measure := parts[2]
+		num, _ := strconv.Atoi(parts[1] + parts[2])
+		measure := parts[3]
 
 		switch measure {
 		case "y":

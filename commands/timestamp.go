@@ -13,7 +13,7 @@ var Timestamp = cli.Command{
 timestamp
 timestamp 1988-08-13
 timestamp "1988-08-13 18:06:06"
-timestamp 1y+ 2m- 3d 4h 5i 6s
+timestamp +1y -2m 3d 4h 5i 6s
 `,
 	ArgsUsage: `timestamp [date|datetime|expression...]`,
 	Action: func(c *cli.Context) error {

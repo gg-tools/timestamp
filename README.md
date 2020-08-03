@@ -1,6 +1,6 @@
 # Timestamp Tool
 
-A command tool that converts between time and timestamp.
+A command line tool that converts between time and timestamp.
 
 ## Installation
 

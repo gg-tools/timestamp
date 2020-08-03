@@ -1,12 +1,22 @@
 # Timestamp Tool
 
+A command tool that converts between time and timestamp.
+
 ## Installation
 
-Simply run:
+Make sure Go Module is on, by setting environment variable:
 
-`go install github.com/gg-tools/timestamp`
+```shell
+$ export GO111MODULE=on
+```
 
-Make sure your `PATH` includes the `$GOPATH/bin` directory so your commands can be easily used:
+And simply run:
+
+```shell
+$ go install github.com/gg-tools/timestamp
+```
+
+Make sure your `PATH` includes the `$GOPATH/bin` directory so commands can be easily used:
 
 `export PATH=$PATH:$GOPATH/bin`
 
@@ -35,7 +45,7 @@ $ timestamp +1y -2m 3d 4h 5i 6s
 Get current time:
 
 ```shell
-timestamp time
+$ timestamp time
 ```
 
 Get time from timestamps:

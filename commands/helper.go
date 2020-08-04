@@ -27,9 +27,9 @@ func parseTimestamp(str string) (time.Time, error) {
 func parseTime(arg string) (t time.Time, err error) {
 	switch len(arg) {
 	case dateLen:
-		return time.Parse(dateFormat, arg)
+		return time.ParseInLocation(dateFormat, arg, time.Local)
 	case timeLen:
-		return time.Parse(timeFormat, arg)
+		return time.ParseInLocation(timeFormat, arg, time.Local)
 	default:
 		return time.Time{}, errors.New("bad time format")
 	}

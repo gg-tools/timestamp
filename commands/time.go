@@ -9,9 +9,10 @@ var Time = cli.Command{
 	Name:      "time",
 	ShortName: "t",
 	Usage:     "covert timestamp to time",
-	UsageText: `
-timestamp time 587433600
-timestamp time 587433600 1597276800
+	UsageText: `timestamp t [timestamps...]
+
+timestamp t 587433600
+timestamp t 587433600 1597276800
 `,
 	ArgsUsage: "time [timestamp...]",
 	Action: func(c *cli.Context) error {

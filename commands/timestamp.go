@@ -9,11 +9,12 @@ var Timestamp = cli.Command{
 	Name:      "timestamp",
 	ShortName: "ts",
 	Usage:     "covert time to timestamp",
-	UsageText: `
-timestamp
-timestamp 1988-08-13
-timestamp "1988-08-13 18:06:06"
-timestamp +1y -2m 3d 4h 5i 6s
+	UsageText: `timestamp ts [date|datetime|expressions...]
+
+timestamp ts 
+timestamp ts 1988-08-13
+timestamp ts "1988-08-13 18:06:06"
+timestamp ts +1y -2m 3d 4h 5i 6s
 `,
 	ArgsUsage: `timestamp [date|datetime|expression...]`,
 	Action: func(c *cli.Context) error {

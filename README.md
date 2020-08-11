@@ -4,16 +4,10 @@ A command line tool that converts between time and timestamp.
 
 ## Installation
 
-Make sure Go Module is on, by setting environment variable:
+Make sure your Go Version is greater than 1.13. And simply run:
 
 ```shell
-$ export GO111MODULE=on
-```
-
-And simply run:
-
-```shell
-$ go install github.com/gg-tools/timestamp
+$ GO111MODULE=on go get github.com/gg-tools/timestamp
 ```
 
 Make sure your `PATH` includes the `$GOPATH/bin` directory so commands can be easily used:
